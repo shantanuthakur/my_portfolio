@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="backdrop-blur-md sticky top-0 z-50 border-b">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Shantanu</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-900">About</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-900">Experience</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-900">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-900">Projects</a>
+            <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-900">Education</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-900">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-16 my-6 relative overflow-hidden rounded-lg">
+             <div class="absolute inset-0 hero-bg-overlay"></div>
+             <div class="relative z-10">
+                <img src="shantanu.jpeg" alt="Shantanu" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 shadow-lg object-cover reveal profile-photo" onerror="this.onerror=null;this.src='https://placehold.co/160x160/1f2937/9ca3af?text=S';">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4 reveal" style="--delay: 0.1s;">Shantanu</h1>
+                <p class="text-2xl md:text-3xl text-gray-300 font-medium mb-8 reveal" style="--delay: 0.2s;">
+                    <span id="typing-text"></span><span class="typing-cursor"></span>
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal" style="--delay: 0.3s;">
+                    <a href="Shantanu-Resume.pdf" target="_blank" class="inline-flex items-center justify-center font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg download-cv">
+                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                        View CV
+                    </a>
+                    <div class="flex items-center space-x-6">
+                        <a href="https://www.linkedin.com/in/shantanu-chauhan" target="_blank" class="icon-link text-gray-300 hover:text-white"><i data-lucide="linkedin" class="w-6 h-6"></i><span>LinkedIn</span></a>
+                        <a href="https://github.com/shantanuthakur" target="_blank" class="icon-link text-gray-300 hover:text-white"><i data-lucide="github" class="w-6 h-6"></i><span>GitHub</span></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="py-12 reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center text-lg about-text">
+                <p>Aspiring Machine Learning Engineer with hands-on experience in model development, deployment, and real-time computer vision systems. Skilled in Python, SQL, and deep learning frameworks such as TensorFlow and PyTorch. Strong background in EDA, model optimization, and delivering AI-powered solutions. Currently contributing to a research paper on yoga pose detection at Quantum University.</p>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience" class="py-12 reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="card reveal">
+                    <h3 class="text-xl font-bold">Machine Learning Engineer Intern</h3>
+                    <p class="text-md company-name">Inonetecx Inc.</p>
+                    <p class="text-sm mt-1 date-location">Dec 2024 - Mar 2025 · Toronto (Remote)</p>
+                    <ul class="mt-4 list-disc list-inside space-y-2 details-list">
+                        <li>Built and optimized ML models using Scikit-learn and TensorFlow, achieving a 15% boost in prediction accuracy and efficiency.</li>
+                        <li>Conducted EDA using Pandas & Matplotlib, identifying trends and anomalies that led to 15% process optimization.</li>
+                        <li>Deployed ML models using REST APIs for real-time inference in production environments.</li>
+                        <li>Developed interactive analytics dashboards in Streamlit for real-time monitoring and decision support.</li>
+                        <li>Collaborated with cross-functional teams using Git and GitHub for version control and seamless workflow integration.</li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h3 class="text-xl font-bold">Data Analyst Intern</h3>
+                    <p class="text-md company-name">Codtech IT Solutions</p>
+                    <p class="text-sm mt-1 date-location">Jul 2024 - Sep 2024 · Gurgaon (Remote)</p>
+                    <ul class="mt-4 list-disc list-inside space-y-2 details-list">
+                        <li>Worked on a project called "Sales Analytics and Trend Forecasting" to help understand sales data better.</li>
+                        <li>Used Python libraries like Pandas and Matplotlib to find patterns and trends in the data.</li>
+                        <li>Wrote SQL queries to collect important data from MySQL databases quickly.</li>
+                        <li>Made clear and simple reports and charts to explain the data to the team.</li>
+                        <li>Worked closely with team members online to share updates and solve problems together.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills" class="py-12">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card reveal" style="--delay: 0s;"><h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="code-2" class="w-5 h-5 mr-2 skill-icon"></i>Languages</h3><div class="flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">SQL</span></div></div>
+                <div class="card reveal" style="--delay: 0.1s;"><h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="brain-circuit" class="w-5 h-5 mr-2 skill-icon"></i>Data Science & ML</h3><div class="flex flex-wrap gap-2"><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span></div></div>
+                <div class="card reveal" style="--delay: 0.2s;"><h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="bar-chart-3" class="w-5 h-5 mr-2 skill-icon"></i>Data Visualization</h3><div class="flex flex-wrap gap-2"><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Power BI</span></div></div>
+                <div class="card reveal" style="--delay: 0.3s;"><h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="server" class="w-5 h-5 mr-2 skill-icon"></i>Web & Deployment</h3><div class="flex flex-wrap gap-2"><span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+                <div class="card reveal" style="--delay: 0.4s;"><h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="terminal-square" class="w-5 h-5 mr-2 skill-icon"></i>Developer Tools</h3><div class="flex flex-wrap gap-2"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Jupyter Notebook</span><span class="tag">PyCharm</span></div></div>
+            </div>
+        </section>
+
+        <!-- Project Accomplishments -->
+        <section id="projects" class="py-12">
+            <h2 class="section-title reveal">Project Accomplishments</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card flex flex-col reveal" style="--delay: 0s;">
+                    <h3 class="text-xl font-bold mb-2">AI-Based Yoga Pose Recognition</h3>
+                    <p class="mb-4 flex-grow project-description">Developed a real-time yoga pose classification system using YOLOv10 Nano and MediaPipe for landmark tracking. Achieved 89.8% mAP.</p>
+                    <div class="flex flex-wrap gap-2"><span class="tag">YOLOv10</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span></div>
+                    <a href="https://github.com/shantanuthakur/yoga_pose_detection_system" target="_blank" class="icon-link mt-auto hover:text-white"><span>View on GitHub</span></a>
+                </div>
+                <div class="card flex flex-col reveal" style="--delay: 0.1s;">
+                    <h3 class="text-xl font-bold mb-2">Food Item Detection & Calorie Estimator</h3>
+                    <p class="mb-4 flex-grow project-description">Developed a smart food detection system using YOLOv8 integrated with OpenAI GPT API to generate food-specific nutritional and dietary insights.</p>
+                    <div class="flex flex-wrap gap-2"><span class="tag">YOLOv8</span><span class="tag">OpenAI API</span><span class="tag">Flask</span></div>
+                    <a href="https://github.com/Akshaypareek01/DietProject_samsara" target="_blank" class="icon-link mt-auto hover:text-white"><span>View on GitHub</span></a>
+                </div>
+                <div class="card flex flex-col reveal" style="--delay: 0.2s;">
+                    <h3 class="text-xl font-bold mb-2">Sign Language Gesture Recognition</h3>
+                    <p class="mb-4 flex-grow project-description">Built a real-time sign language recognition system using YOLOv8 to detect 5 hand gestures. Achieved 94.56% accuracy.</p>
+                    <div class="flex flex-wrap gap-2"><span class="tag">YOLOv8</span><span class="tag">Roboflow</span><span class="tag">OpenCV</span></div>
+                    <a href="https://github.com/shantanuthakur/real-time-sign-language-recognition-" target="_blank" class="icon-link mt-auto hover:text-white"><span>View on GitHub</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="py-12 reveal">
+            <h2 class="section-title">Education</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="card reveal">
+                    <h3 class="text-xl font-bold">B.Tech, Computer Science & Engineering (Data Science)</h3>
+                    <p class="text-md company-name">Quantum University, Roorkee</p>
+                    <p class="text-sm mt-1 date-location">2022 - Present | CGPA: 7.25/10</p>
+                </div>
+                <div class="card reveal">
+                    <h3 class="text-xl font-bold">Intermediate (12th Grade)</h3>
+                    <p class="text-md company-name">Maharana Pratap Memorial Inter College, Saharanpur</p>
+                    <p class="text-sm mt-1 date-location">Completed: 2021 | Percentage: 69.9%</p>
+                </div>
+                <div class="card reveal">
+                    <h3 class="text-xl font-bold">High School (10th Grade)</h3>
+                    <p class="text-md company-name">Maharana Pratap Memorial Inter College, Saharanpur</p>
+                    <p class="text-sm mt-1 date-location">Completed: 2019 | Percentage: 82.3%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="border-t mt-12">
+        <div class="container mx-auto px-6 py-12 text-center reveal">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="mb-8 max-w-xl mx-auto footer-text">I'm actively looking for new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
+                 <a href="mailto:learnwithshantanu19@gmail.com" class="icon-link"><i data-lucide="mail" class="w-5 h-5"></i><span>learnwithshantanu19@gmail.com</span></a>
+                 <a href="tel:+919528418661" class="icon-link"><i data-lucide="phone" class="w-5 h-5"></i><span>+91 9528418661</span></a>
+                <div class="icon-link"><i data-lucide="map-pin" class="w-5 h-5"></i><span>Roorkee, India</span></div>
+            </div>
+             <div class="flex justify-center items-center space-x-6">
+                <a href="https://www.linkedin.com/in/shantanu-chauhan" target="_blank" class="social-icon"><i data-lucide="linkedin" class="w-7 h-7"></i></a>
+                <a href="https://github.com/shantanuthakur" target="_blank" class="social-icon"><i data-lucide="github" class="w-7 h-7"></i></a>
+            </div>
+            <p class="text-sm mt-8 copyright-text">&copy; 2025 Shantanu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
